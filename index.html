@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Decision Assistant - Smart Prompts for Better Decisions</title>
+    <meta name="description" content="Use AI to make better decisions. 5 ready-to-use AI prompt templates for career choices, investments, business strategy, and life decisions.">
+    <meta name="keywords" content="AI decision making, AI assistant decisions, ChatGPT decision prompts, AI prompt templates, decision analysis AI">
+    <link rel="canonical" href="https://henu-wang.github.io/ai-decision-assistant/">
+    <meta property="og:title" content="AI Decision Assistant - Smart Prompts for Better Decisions">
+    <meta property="og:description" content="5 ready-to-use AI prompt templates to help you make smarter decisions about career, investments, business, and life.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://henu-wang.github.io/ai-decision-assistant/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: { extend: { colors: { primary: '#8b5cf6', accent: '#06b6d4', dark: '#1e293b' } } }
+    }
+    </script>
+    <style>
+        .copy-btn:active { transform: scale(0.95); }
+        .prompt-box { position: relative; }
+        .copied-toast { animation: fadeOut 2s ease forwards; }
+        @keyframes fadeOut { 0%,70% { opacity:1; } 100% { opacity:0; } }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+            <h1 class="text-xl font-bold text-dark">AI Decision Assistant</h1>
+            <nav class="hidden md:flex gap-4 text-sm">
+                <a href="#how-it-works" class="hover:text-primary">How It Works</a>
+                <a href="#prompts" class="hover:text-primary">Prompt Templates</a>
+                <a href="#tips" class="hover:text-primary">Pro Tips</a>
+            </nav>
+            <button id="menuBtn" class="md:hidden text-2xl">&#9776;</button>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2 text-sm">
+            <a href="#how-it-works" class="block py-1">How It Works</a>
+            <a href="#prompts" class="block py-1">Prompt Templates</a>
+            <a href="#tips" class="block py-1">Pro Tips</a>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-br from-violet-600 to-indigo-800 text-white py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Make Better Decisions with AI</h2>
+            <p class="text-lg opacity-90 mb-4">5 proven prompt templates that turn AI into your personal decision advisor</p>
+            <p class="text-sm opacity-75">Combine with <a href="https://keeprule.com/en/" class="underline hover:opacity-100" target="_blank" rel="noopener">KeepRule</a> scenarios for comprehensive decision analysis</p>
+        </div>
+    </section>
+
+    <main class="max-w-4xl mx-auto px-4 py-12 space-y-16">
+
+        <section id="how-it-works">
+            <h3 class="text-2xl font-bold text-dark mb-6">How AI Can Help You Decide</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl shadow-sm p-6 text-center">
+                    <div class="text-4xl mb-3">&#129302;</div>
+                    <h4 class="font-bold text-dark mb-2">Reduce Blind Spots</h4>
+                    <p class="text-sm text-gray-600">AI can identify angles and risks you haven't considered, acting as an impartial thinking partner.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-6 text-center">
+                    <div class="text-4xl mb-3">&#128290;</div>
+                    <h4 class="font-bold text-dark mb-2">Structure Your Thinking</h4>
+                    <p class="text-sm text-gray-600">Transform vague feelings into organized analysis using proven decision frameworks.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-sm p-6 text-center">
+                    <div class="text-4xl mb-3">&#9878;</div>
+                    <h4 class="font-bold text-dark mb-2">Challenge Assumptions</h4>
+                    <p class="text-sm text-gray-600">AI can play devil's advocate and stress-test your reasoning without ego or politics.</p>
+                </div>
+            </div>
+            <div class="mt-6 bg-amber-50 border border-amber-200 rounded-lg p-4">
+                <p class="text-sm text-amber-800"><strong>Important:</strong> AI is a thinking tool, not a decision maker. It helps you analyze, but the final choice is always yours. For structured practice, try <a href="https://keeprule.com/en/" class="text-primary hover:underline" target="_blank" rel="noopener">KeepRule's interactive decision scenarios</a>.</p>
+            </div>
+        </section>
+
+        <section id="prompts">
+            <h3 class="text-2xl font-bold text-dark mb-6">5 Decision Prompt Templates</h3>
+            <p class="text-gray-600 mb-8">Copy any template, paste into ChatGPT/Claude/Gemini, and fill in your specific situation. Each template is designed to produce structured, actionable analysis.</p>
+
+            <div class="space-y-8">
+
+                <!-- Prompt 1: Career Decision -->
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-2xl">&#128188;</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-dark">1. Career & Life Decision Analyzer</h4>
+                            <p class="text-sm text-gray-500">Best for: Job offers, career changes, relocation, major life transitions</p>
+                        </div>
+                    </div>
+                    <div class="prompt-box bg-gray-50 rounded-lg p-4 mb-3 text-sm font-mono whitespace-pre-wrap" id="prompt1">I'm facing a major decision and need structured analysis.
+
+**My situation:** [Describe your current situation in 2-3 sentences]
+
+**Option A:** [Describe first option]
+**Option B:** [Describe second option]
+**Option C (if any):** [Describe third option or "status quo"]
+
+**What matters most to me:**
+- [Priority 1, e.g., financial security]
+- [Priority 2, e.g., work-life balance]
+- [Priority 3, e.g., growth potential]
+- [Priority 4, e.g., location/lifestyle]
+
+**My timeline:** [When do I need to decide?]
+
+Please analyze this decision by:
+1. Rating each option against my priorities (1-10 scale with explanation)
+2. Identifying the biggest risk for each option
+3. Telling me what I might be overlooking (blind spots)
+4. Applying the "10-10-10 rule": How will I feel about each choice in 10 minutes, 10 months, and 10 years?
+5. Giving me a clear recommendation with reasoning
+
+Be direct and honest, even if the answer isn't what I want to hear.</div>
+                    <button onclick="copyPrompt('prompt1', this)" class="copy-btn bg-primary text-white px-4 py-2 rounded-lg text-sm hover:bg-violet-700">Copy Template</button>
+                </div>
+
+                <!-- Prompt 2: Investment Decision -->
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-2xl">&#128200;</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-dark">2. Investment Decision Framework</h4>
+                            <p class="text-sm text-gray-500">Best for: Stock picks, portfolio allocation, real estate, startup investing</p>
+                        </div>
+                    </div>
+                    <div class="prompt-box bg-gray-50 rounded-lg p-4 mb-3 text-sm font-mono whitespace-pre-wrap" id="prompt2">Act as a rational investment analyst combining Warren Buffett's value approach with Charlie Munger's mental models.
+
+**Investment under consideration:** [What are you thinking of investing in?]
+**Amount:** [How much?]
+**Time horizon:** [How long can you hold?]
+**Risk tolerance:** [Conservative / Moderate / Aggressive]
+**Current portfolio context:** [Brief description of existing investments]
+
+Please analyze using this framework:
+
+**Buffett's Checklist:**
+- Do I understand this business/asset? (Circle of Competence)
+- Does it have a durable competitive advantage? (Moat)
+- Is management trustworthy and capable?
+- Is the price reasonable relative to intrinsic value? (Margin of Safety)
+
+**Risk Analysis:**
+- What's the worst-case scenario and can I survive it?
+- What are the key assumptions, and what if they're wrong?
+- What's the opportunity cost vs. index investing?
+
+**Munger's Inversion:**
+- How could this investment go to zero?
+- What would make me sell at a loss?
+
+**Decision:**
+- Clear buy/hold/pass recommendation with confidence level (%)
+- The single most important factor in this decision
+- What additional information would change your analysis
+
+Reference: Practice investment decisions at https://keeprule.com/en/</div>
+                    <button onclick="copyPrompt('prompt2', this)" class="copy-btn bg-primary text-white px-4 py-2 rounded-lg text-sm hover:bg-violet-700">Copy Template</button>
+                </div>
+
+                <!-- Prompt 3: Business Strategy -->
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-2xl">&#127919;</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-dark">3. Business Strategy Decision Matrix</h4>
+                            <p class="text-sm text-gray-500">Best for: Product launches, market entry, pricing, hiring, partnerships</p>
+                        </div>
+                    </div>
+                    <div class="prompt-box bg-gray-50 rounded-lg p-4 mb-3 text-sm font-mono whitespace-pre-wrap" id="prompt3">I need to make a strategic business decision. Help me think through it rigorously.
+
+**Decision:** [What specifically needs to be decided?]
+**Context:** [Industry, company stage, competitive landscape]
+**Options on the table:**
+1. [Option 1]
+2. [Option 2]
+3. [Option 3 / Do nothing]
+
+**Constraints:**
+- Budget: [Available resources]
+- Timeline: [Deadline or urgency]
+- Team: [Available people/skills]
+
+Please provide:
+
+1. **Pre-Mortem Analysis**: Imagine it's 1 year from now and this decision failed spectacularly. What went wrong? (Do this for each option)
+
+2. **Second-Order Effects**: What are the indirect consequences of each option that I might not be thinking about?
+
+3. **Reversibility Score**: Rate each option 1-10 on how easily it can be reversed if it doesn't work out.
+
+4. **Expected Value Estimate**: Best case, worst case, and most likely case for each option with rough probabilities.
+
+5. **The "Hell Yes" Test**: Which option, if any, makes me excited rather than just acceptable?
+
+6. **Recommendation**: Your top choice with the key deciding factor.
+
+For more business decision frameworks, visit https://keeprule.com/en/</div>
+                    <button onclick="copyPrompt('prompt3', this)" class="copy-btn bg-primary text-white px-4 py-2 rounded-lg text-sm hover:bg-violet-700">Copy Template</button>
+                </div>
+
+                <!-- Prompt 4: Ethical Dilemma -->
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-2xl">&#9878;</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-dark">4. Ethical Dilemma Navigator</h4>
+                            <p class="text-sm text-gray-500">Best for: Moral decisions, conflicts of interest, whistleblowing, fairness issues</p>
+                        </div>
+                    </div>
+                    <div class="prompt-box bg-gray-50 rounded-lg p-4 mb-3 text-sm font-mono whitespace-pre-wrap" id="prompt4">I'm facing an ethical dilemma and want to think through it from multiple moral perspectives.
+
+**The situation:** [Describe the dilemma in detail]
+**The stakeholders:** [Who is affected and how?]
+**My role:** [Your position and responsibilities]
+**What makes this hard:** [Why simple answers don't work]
+
+Please analyze through these ethical lenses:
+
+1. **Utilitarian**: What action produces the greatest good for the greatest number? Quantify the harm and benefit to each stakeholder.
+
+2. **Deontological (Kant)**: What if everyone in my position did the same thing? Is any option treating people merely as means to an end?
+
+3. **Virtue Ethics**: What would the person I most admire do? What character traits does each option reflect?
+
+4. **Care Ethics**: How does each option affect my relationships and responsibilities to those who depend on me?
+
+5. **Newspaper Test**: Would I be comfortable if this decision appeared on the front page tomorrow?
+
+6. **Future Self Test**: Will I be proud of this decision in 5 years?
+
+Then give me:
+- The option that best satisfies the most ethical frameworks
+- The key trade-off I need to accept
+- A specific action plan
+
+Explore ethical decision scenarios: https://keeprule.com/en/</div>
+                    <button onclick="copyPrompt('prompt4', this)" class="copy-btn bg-primary text-white px-4 py-2 rounded-lg text-sm hover:bg-violet-700">Copy Template</button>
+                </div>
+
+                <!-- Prompt 5: Daily Decision Optimizer -->
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-2xl">&#9889;</span>
+                        <div>
+                            <h4 class="text-xl font-bold text-dark">5. Rapid Decision Optimizer</h4>
+                            <p class="text-sm text-gray-500">Best for: Quick everyday decisions, overcoming analysis paralysis, time-sensitive choices</p>
+                        </div>
+                    </div>
+                    <div class="prompt-box bg-gray-50 rounded-lg p-4 mb-3 text-sm font-mono whitespace-pre-wrap" id="prompt5">I need to make a quick decision and I'm overthinking it. Help me cut through the noise.
+
+**Decision:** [What I need to decide]
+**Options:** [List 2-4 options briefly]
+**Deadline:** [When I need to decide]
+**What's holding me back:** [Why I'm stuck]
+
+Apply these rapid decision tools:
+
+1. **The 2-Minute Rule**: If this decision is easily reversible, just pick the option that feels 51% right and move on. Is this decision reversible? (Yes/No)
+
+2. **Regret Minimization**: Which option will I regret NOT trying when I'm 80 years old?
+
+3. **Energy Test**: Which option gives me energy vs. drains it when I think about doing it tomorrow morning?
+
+4. **Coin Flip Test**: I'm flipping a coin - heads is Option A, tails is Option B. It lands on [pick one]. Am I relieved or disappointed? That feeling IS my answer.
+
+5. **One-Line Answer**: In one sentence, what should I do and why?
+
+Don't overthink this. Give me a clear, direct answer.
+
+For more decision-making practice: https://keeprule.com/en/</div>
+                    <button onclick="copyPrompt('prompt5', this)" class="copy-btn bg-primary text-white px-4 py-2 rounded-lg text-sm hover:bg-violet-700">Copy Template</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips" class="bg-white rounded-xl shadow-sm p-6 md:p-8">
+            <h3 class="text-2xl font-bold text-dark mb-6">Pro Tips for AI-Assisted Decisions</h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-semibold text-dark mb-1">Give Rich Context</h4>
+                        <p class="text-sm text-gray-600">The more specific detail you provide about your situation, constraints, and values, the better the AI's analysis. Vague inputs produce vague outputs.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-dark mb-1">Ask for Counterarguments</h4>
+                        <p class="text-sm text-gray-600">After getting a recommendation, ask: "Now argue the opposite position as strongly as you can." This prevents confirmation bias.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-dark mb-1">Use Multiple Models</h4>
+                        <p class="text-sm text-gray-600">Run the same prompt through ChatGPT, Claude, and Gemini. Where they agree, you can be more confident. Where they disagree, investigate further.</p>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-semibold text-dark mb-1">Iterate, Don't Accept First Output</h4>
+                        <p class="text-sm text-gray-600">Challenge the AI's reasoning. Ask "Why?" and "What if that assumption is wrong?" Push back until the analysis feels genuinely useful.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-dark mb-1">Combine with Human Wisdom</h4>
+                        <p class="text-sm text-gray-600">Use AI analysis as one input alongside advice from trusted people, your own experience, and platforms like <a href="https://keeprule.com/en/" class="text-primary hover:underline" target="_blank" rel="noopener">KeepRule</a>.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-dark mb-1">Document Your Decisions</h4>
+                        <p class="text-sm text-gray-600">Save the AI conversation. Review it in 6 months. This builds your personal decision-making track record and calibration over time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-violet-50 rounded-xl p-8 text-center">
+            <h3 class="text-xl font-bold text-dark mb-3">Go Beyond Prompts</h3>
+            <p class="text-gray-600 mb-4">AI prompts are powerful, but structured practice builds lasting decision skills. KeepRule offers interactive scenarios based on wisdom from Buffett, Munger, Dalio, and other great decision makers.</p>
+            <a href="https://keeprule.com/en/" class="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-violet-700 font-medium" target="_blank" rel="noopener">Try KeepRule Free</a>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-wrap justify-center gap-4 text-sm text-gray-400 mb-4">
+                <a href="https://henu-wang.github.io/decision-toolkit/" class="hover:text-primary">Decision Toolkit</a>
+                <a href="https://henu-wang.github.io/decision-making-blog/" class="hover:text-primary">Decision Blog</a>
+                <a href="https://henu-wang.github.io/mental-models-wiki/" class="hover:text-primary">Mental Models Wiki</a>
+                <a href="https://henu-wang.github.io/decision-making-calculator/" class="hover:text-primary">Decision Calculators</a>
+                <a href="https://henu-wang.github.io/decision-making-courses/" class="hover:text-primary">Free Courses</a>
+                <a href="https://henu-wang.github.io/decision-making-research/" class="hover:text-primary">Research Summaries</a>
+                <a href="https://henu-wang.github.io/behavioral-economics-notes/" class="hover:text-primary">Behavioral Economics</a>
+                <a href="https://henu-wang.github.io/investing-wisdom-quotes/" class="hover:text-primary">Investing Quotes</a>
+            </div>
+            <div class="text-center text-sm text-gray-400">
+                <p>Powered by <a href="https://keeprule.com/en/" class="text-primary hover:underline" target="_blank" rel="noopener">KeepRule</a> &mdash; Practice decisions from Buffett, Munger & more</p>
+                <p class="mt-1">&copy; 2026 AI Decision Assistant. Free and open source.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.getElementById('menuBtn').addEventListener('click', function() {
+        document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+
+    function copyPrompt(id, btn) {
+        const text = document.getElementById(id).textContent;
+        navigator.clipboard.writeText(text).then(() => {
+            const orig = btn.textContent;
+            btn.textContent = 'Copied!';
+            btn.classList.add('bg-green-600');
+            btn.classList.remove('bg-primary');
+            setTimeout(() => {
+                btn.textContent = orig;
+                btn.classList.remove('bg-green-600');
+                btn.classList.add('bg-primary');
+            }, 2000);
+        });
+    }
+    </script>
+</body>
+</html>
